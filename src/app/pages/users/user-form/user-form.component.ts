@@ -36,6 +36,17 @@ export class UserFormComponent implements OnInit {
     this.userForm.get('id')?.patchValue(this.users.length + 1);
     this.userService.postUser(this.userForm.value).subscribe(result => {
       console.log("Usuário cadastrado com sucesso!" + result);
+    }, (err) => {
+      console.log(err);
+    }, () => {
+      this.userForm = this.fb.group({
+        id: 0,
+        nome: '',
+        sobrenome: '',
+        idade: '',
+        profissao: '' 
+      });
+      this.getUsers();
     });
   }
 
