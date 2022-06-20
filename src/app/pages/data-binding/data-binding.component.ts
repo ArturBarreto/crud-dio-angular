@@ -11,6 +11,8 @@ export class DataBindingComponent implements OnInit {
   image = 'https://picsum.photos/300/300';
   buttonText = 'Clique aqui';
   textRed = false;
+  bgColor = 'green';
+  fontSize = '20px';
 
   retornaNome(): string {
     return this.text;
