@@ -7,10 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DataBindingComponent implements OnInit {
 
-  text = 'Grazi Alencar Lima'
+  text = 'Grazi Alencar Lima';
+  image = 'https://picsum.photos/300/300';
+  buttonText = 'Clique aqui';
+  textRed = false;
 
   retornaNome(): string {
     return this.text;
+  }
+
+  clicou(value:string): void {
+    console.log("CLicou! ", value);
+    this.text = value;
+    this.textRed = true;
   }
 
   constructor() { }
