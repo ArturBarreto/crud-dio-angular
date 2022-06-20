@@ -15,4 +15,4 @@
 <app-button [btnText]="'Excluir'" [btnType]="'btn-danger'"></app-button>
 <app-button [btnText]="'Salva'" [btnType]="'btn-success'"></app-button>
 <app-button [btnText]="'Editar'" [btnType]="'btn-primary'"></app-button>
-<app-button [btnText]="'Cancelar'" [btnType]="'btn-default'"></app-button>
+<app-button [btnText]="'Cancelar'" [btnType]="'btn-default'" (clickChildren)="clicouNoFilho($event)"></app-button>

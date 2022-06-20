@@ -25,6 +25,10 @@ export class DataBindingComponent implements OnInit {
     this.textRed = true;
   }
 
+  clicouNoFilho(text:any): void {
+    console.log(text)
+  }
+
   constructor() { }
 
   ngOnInit(): void {
