@@ -13,6 +13,7 @@ export class DataBindingComponent implements OnInit {
   textRed = false;
   bgColor = 'green';
   fontSize = '20px';
+  textInput = '';
 
   retornaNome(): string {
     return this.text;

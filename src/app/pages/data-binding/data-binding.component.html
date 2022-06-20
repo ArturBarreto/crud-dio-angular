@@ -1,5 +1,5 @@
 <h1 [class.text-red]="textRed" [style.font-size]="fontSize">O nome é {{ text }}</h1>
-<h2>{{ 1 + 1}}</h2>
+<h2>{{ 1 + 1 }}</h2>
 <h2>{{retornaNome()}}</h2>
 
 <img [src]="image" (click)="clicou('')" alt="A 300x300 image">
@@ -7,5 +7,7 @@
 <button [attr.aria-label]="buttonText" (click)="clicou(input.value)" [style.background-color]="bgColor">{{ buttonText }}</button>
 
 <input #input (keyup)="clicou(input.value)">
-
 {{ input.value }}
+
+<input type="text" class="form-control" [(ngModel)]="textInput">
+<p class="text-default">{{ textInput }}</p>
